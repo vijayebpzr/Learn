@@ -1,0 +1,12 @@
+<textarea>{{language}}</textarea>
+
+<span *ngIf="!isLoggedIn">
+    <button mat-button (click)="login()" > Login</button>
+</span>
+<span *ngIf="isLoggedIn">
+    <button mat-button (click)="logout()" > LogOut</button>
+</span>
+
+<div>
+<router-outlet></router-outlet>
+</div>
